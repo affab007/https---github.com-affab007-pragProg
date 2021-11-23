@@ -27,7 +27,8 @@
                     
               var ค่าอาหาร = Number(document.getElementById("ค่าอาหาร").value);
               var ทิปที่ต้องการให้ = Number(document.getElementById("ทิปที่ต้องการให้").value);
-              var result = ค่าอาหาร + ทิปที่ต้องการให้;
+              var ตัวหาร = Number(document.getElementById("ตัวหาร").value);
+              var result = ค่าอาหาร * ทิปที่ต้องการให้ / ตัวหาร;
                 
               document.getElementById("result").value = result;
               
