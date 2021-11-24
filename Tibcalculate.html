@@ -14,11 +14,13 @@
     </head>
     <body> 
         <label>ค่าอาหาร</label>
-        <input type="number" id="ค่าอาหาร"  onchange='calculate()'/><br>
+        <input type="number" id="ค่าอาหาร"  onchange='calculate()'/>บาท<br>
         <label>ทิปที่ต้องการให้</label>
-        <input type="number" id="ทิปที่ต้องการให้"  onchange='calculate()'/><br>
-        <label>ผลลัพธ์</label>
-        <input type="number" id="result" readonly/>
+        <input type="number" id="ทิปที่ต้องการให้" onchange='calculate()'/>%<br>
+        <label>ค่าทิป</label>
+        <input type="number" id="tip" readonly/>บาท<br>
+        <label>คิดรวมเป็นเงิน</label>
+        <input type="number" id="result" readonly/>บาท
 
         
         <script src="" async defer></script>
@@ -29,10 +31,11 @@
                     
               var ค่าอาหาร = Number(document.getElementById("ค่าอาหาร").value);
               var ทิปที่ต้องการให้ = Number(document.getElementById("ทิปที่ต้องการให้").value);
-              var result = Math.round(ค่าอาหาร * ทิปที่ต้องการให้ / 100 + ค่าอาหาร);
+              var tip = Math.floor(ค่าอาหาร * ทิปที่ต้องการให้ / 100);
+              var result = Math.round(tip + ค่าอาหาร);
                 
               document.getElementById("result").value = result;
-              
+              document.getElementById("tip").value = tip;
             }
           </script>
     </body>
