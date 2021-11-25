@@ -1,7 +1,4 @@
-var คำคม;
-คำคม = prompt("คําคม หรือ คําพังเพย อะไร?","โปรดระบุ")
-var numberOfLetters = คำคม.length;
-var ใครเป็นคนกล่าวไว้;
-ใครเป็นคนกล่าวไว้ = prompt("ใครเป็นคนกล่าวไว้ ?","โปรดระบุ")
-var numberOfLetters = ใครเป็นคนกล่าวไว้.length;
-document.write(ใครเป็นคนกล่าวไว้ ,"\n \ กล่าวว่า\ \n ",คำคม);
+var inputName;
+inputName = prompt("What is the input string?","Please specify")
+var numberOfLetters = inputName.length;
+console.log(inputName ,"\n \ has \ \n",numberOfLetters,"\n \ characters. \ ");
