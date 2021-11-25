@@ -1,7 +1,5 @@
-var คำคม;
-คำคม = prompt("คําคม หรือ คําพังเพย อะไร?","Please specify")
-var numberOfLetters = คำคม.length;
-var ใครเป็นคนกล่าวไว้;
-ใครเป็นคนกล่าวไว้ = prompt("ใครเป็นคนกล่าวไว้ ?","Please enter your name")
-var numberOfLetters = ใครเป็นคนกล่าวไว้.length;
-console.log(ใครเป็นคนกล่าวไว้ ,"\n \ กล่าวว่า\ \n ",คำคม);
+var quotation;
+quotation = prompt("What quip or a proverb?","Please specify")
+var whosaid;
+whosaid = prompt("who said ?","Please enter your name")
+console.log("What quip or a proverb?",quotation," \n \n who said?",whosaid,"\n \n",whosaid,"said",quotation);

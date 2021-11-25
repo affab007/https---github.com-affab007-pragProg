@@ -1,4 +1,4 @@
-var inputName;
-inputName = prompt("What is the input string?","Please specify")
-var numberOfLetters = inputName.length;
-console.log(inputName ,"\n \ has \ \n",numberOfLetters,"\n \ characters. \ ");
+var inputstring;
+inputstring = prompt("What is the input string?","Please specify")
+var numberOfLetters = inputstring.length;
+console.log("What is the input string?",inputstring,"\n",inputstring,"has",inputstring.length,"characters.");
