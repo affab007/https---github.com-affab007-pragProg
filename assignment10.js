@@ -1,3 +1,3 @@
-quotation = prompt("What quip or a proverb?","Please specify")
-whosaid = prompt("who said ?","Please enter your name")
-console.log("What quip or a proverb?",quotation," \n \n who said?",whosaid,"\n \n",whosaid,"said",quotation);
+quotation = prompt("คำคม หรือ คำพังเพย อะไร?","Please specify")
+whoSaid = prompt("ใครเป็นคนกล่าวไว้?","Please enter your name")
+console.log("คำคม หรือ คำพังเพย อะไร?",quotation," \n ใครเป็นคนกล่าวไว้?",whoSaid,"\n",whoSaid,"กล่าวว่า","\"",quotation,"\"");
