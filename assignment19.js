@@ -1,8 +1,8 @@
-eurosAreYouExchanging= parseInt(prompt("How many euros are you exchanging?","Please enter a number"));
-exchangeRate= parseInt(prompt("What is the exchange rate?","Please enter a number"));
-dollars = (eurosAreYouExchanging * exchangeRate) / 100;
+principal =  parseInt(prompt("Enter the principal","Please enter a number"))
+rateOfInterest =  (prompt("Enter the rate of interest","Please enter a number"))
+numberOfYears =  parseInt(prompt("Enter the number of years","Please enter a number"))
 
-console.log("How many euros are you exchanging?",eurosAreYouExchanging,"\n"
-            ,"What is the exchange rate?",exchangeRate,"\n"
-            ,eurosAreYouExchanging," euros at an exchange rate of ",exchangeRate," is "
-            ,dollars.toFixed(2)," U.S. dollars.")
+console.log("Enter the principal: ",principal,"\n", 
+"Enter the rate of interest: ",rateOfInterest,"\n",
+"Enter the number of years: ",numberOfYears,"\n",
+"After 4 years at ",rateOfInterest,"%,","the investment will be worth ฿",Math.ceil(principal+((principal/100)*rateOfInterest)*numberOfYears),".")

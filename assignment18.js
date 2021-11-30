@@ -1,20 +1,8 @@
-priceOfItem = parseInt(prompt("Enter the price of item 1:","Please enter a number"));
-quantityOfItem = parseInt(prompt("Enter the quantity of item 1:","Please enter a number"));
-priceOfItem2 = parseInt(prompt("Enter the price of item 2:","Please enter a number"));
-quantityOfItem2 = parseInt(prompt("Enter the quantity of item 2:","Please enter a number"));
-priceOfItem3 = parseInt(prompt("Enter the price of item 3:","Please enter a number"));
-quantityOfItem3 = parseInt(prompt("Enter the quantity of item 3:","Please enter a number"));
+eurosAreYouExchanging= parseInt(prompt("How many euros are you exchanging?","Please enter a number"));
+exchangeRate= parseInt(prompt("What is the exchange rate?","Please enter a number"));
+dollars = (eurosAreYouExchanging * exchangeRate) / 100;
 
-supTotal = (priceOfItem*quantityOfItem)+(priceOfItem2*quantityOfItem2)+(priceOfItem3*quantityOfItem3);
-tax = (supTotal*5.5)/100;
-Total = supTotal+tax;
-
-console.log("Enter the price of item 1: ",priceOfItem,"\n"
-,"Enter the quantity of item 1: ",quantityOfItem,"\n"
-,"Enter the price of item 2: ",priceOfItem2,"\n"
-,"Enter the quantity of item 2: ",quantityOfItem2,"\n"
-,"Enter the price of item 3: ",priceOfItem3,"\n"
-,"Enter the quantity of item 3: ",quantityOfItem3,"\n"
-,"Subtotal: ฿",supTotal,"\n"
-,"Tax: ฿",tax,"\n"
-,"Total: ฿",Total,"\n")
+console.log("How many euros are you exchanging?",eurosAreYouExchanging,"\n"
+            ,"What is the exchange rate?",exchangeRate,"\n"
+            ,eurosAreYouExchanging," euros at an exchange rate of ",exchangeRate," is "
+            ,dollars.toFixed(2)," U.S. dollars.")
