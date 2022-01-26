@@ -7,8 +7,8 @@ let persons = [
     {Lastname:"Weber         |",Firstname :"Sally ",Position:" Web Developer     |",SeparationDate:" 2015-12-18\n"}
 ];
 
-function getFullName(item) {
-    return [item.Firstname,item.Lastname,item.Position,item.SeparationDate].join(" ");
+function getFullName(info) {
+    return [info.Firstname,info.Lastname,info.Position,info.SeparationDate].join(" ");
 }
 
 let fullName = persons.map(getFullName).sort();

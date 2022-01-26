@@ -7,8 +7,8 @@ let person = [
     { LastName: "Weber", FirstName: "Sally", Position: " Web Developer", SeparationDate: " 2015-12-18\n" }
 ];
 
-function getFullName(item) {
-    return [item.FirstName, item.LastName, item.Position, item.SeparationDate];
+function getFullName(info) {
+    return [info.FirstName, info.LastName, info.Position, info.SeparationDate];
 }
 let persons = person.map(getFullName).sort();
 
@@ -29,16 +29,16 @@ for (let i = 0; i < persons.map(getName).length; i++) {
     }
 }
 
-function getName(item) {
-    return [item[0], item[1]].join(" ");
+function getName(info) {
+    return [info[0], info[1]].join(" ");
 }
 
-function getPst(item) {
-    return [item[2]].join(" ");
+function getPst(info) {
+    return [info[2]].join(" ");
 }
 
-function getSeparation(item) {
-    return [item[3]].join(" ");
+function getSeparation(info) {
+    return [info[3]].join(" ");
 }
 
 function tile(localSortName, localSortPst) {
